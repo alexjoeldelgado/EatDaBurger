@@ -11,7 +11,7 @@ const orm = {
 
     insertOne: (table, columns, values, cb) => {
     if (columns.length === values.length){
-        const query = `INSERT INTO ${table} (${columns}) VALUES (${values})`;
+        const query = `INSERT INTO ${table} (${columns}) VALUE ("${values}")`;
         connection.query(query, (err, result) => {
             if (err) throw err;
             cb(result);

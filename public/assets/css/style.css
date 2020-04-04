@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(224, 172, 0);
+}
+img {
+    border-style: solid;
+}
+.header {
+    border-bottom: solid;
+    border-color: black;
+    border-width: 3px;
+}
+.middle {
+    border-right: solid;
+    border-left: solid;
+    border-color: black;
+    border-width: 3px;    
+    
+}
+li {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: large;
+    color: white;
+    background-color: rgb(92, 91, 91);
+    margin-left: 3px;
+    padding: 5px;
+}
+ul {
+    background-color: black;
+    padding: 3px 3px 3px 0px;
+    border-style: solid;
+    border-color: rgb(185, 75, 55);
+    border-width: 20px;
+    outline-style: solid;
+    outline-width: 3px;
+    
+}
+.burgerimg {
+    margin-top: 150%;
+    margin-bottom: 150%;
+}

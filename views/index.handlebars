@@ -1,12 +1,14 @@
 <div class="container">
-    <div class="row">
-        <div class="col s12">
-            <img src="../public/assets/images/bob-with-a-burger.png" alt="Bob's Burgers">
+    <div class="row header">
+        <div class="col s12 center">
+            <br>
+            <img src="./assets/images/bob-with-a-burger.png" height="300px" alt="Bob's Burgers" class="responsive-img">
+            <h2>Welcome to Bob's Burgers!</h2>
         </div>
     </div>
     <div class="row">
-        <div class="col s4">
-            <h1>Burgers of the Day</h1>
+        <div class="col l5 m6 s12">
+            <h3 class="header">Burgers of the Day</h3>
             <ul>
                 {{#each burgers}}
                     {{#unless devoured}}
@@ -15,27 +17,30 @@
                 {{/each}}
             </ul>
         </div>
-        <div class="col s2">
-            <img src="../public/assets/images/burgerPic.png" alt="Burger Pic">
+        <div class="col l2 center middle hide-on-med-and-down">
+            <img src="./assets/images/burgerPic.png" height="150px" alt="Burger Pic" class="responsive-img burgerimg">
         </div>
-        <div class="col s4">
-            <h1>Burgers of the Dead</h1>
+        <div class="col l5 m6 s12">
+            <h3 class="header">Burgers of the Dead</h3>
             <ul>
                 {{#each burgers}}
                     {{#if devoured}}
                     <li>
                         {{id}}. {{name}}
-                    </li>>
+                    </li>
                     {{/if}}
                 {{/each}}
             </ul>
         </div>
     </div>
     <div class="row">
-        <h2>Add a Burger! (No puns necessary) </h2>
-        <form>
-            <input type="text" name="name" id="burger">
-            <button type="submit">Add a Burger!</button>
-        </form>
+        <div class="col l6 offset-l3 m12 s10 offset-s1 center">
+            <h4 class="header">Add a Burger!</h4> 
+            <p><strong>(No puns necessary)</strong></p>
+            <form class="create-form">
+                <input type="text" name="name" id="burger" class="validate" placeholder="Burger Name">
+                <button type="submit" class="btn waves-effect waves-light red accent-4">Add a Burger!</button>
+            </form>
+        </div>
     </div>
 </div>
